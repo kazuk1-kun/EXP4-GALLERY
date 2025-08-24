@@ -31,6 +31,43 @@
     <p>I love capturing nature, portraits, and urban life through my lens.</p>
   </section>
 
+  <!-- 📸 Image Gallery Section -->
+  <section class="gallery-section">
+    <h3>My Gallery</h3>
+
+    <!-- Main Display -->
+    <div class="main-image">
+      <img id="mainDisplay" src="images/img1.png" alt="Main Display">
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="gallery">
+      <img src="images/img1.png" alt="Image 1">
+      <img src="images/img2.png" alt="Image 2">
+      <img src="images/img3.png" alt="Image 3">
+      <img src="images/img4.png" alt="Image 4">
+      <img src="images/img5.png" alt="Image 5">
+      <img src="images/img6.png" alt="Image 6">
+      <img src="images/img7.png" alt="Image 7">
+      <img src="images/img8.png" alt="Image 8">
+      <img src="images/img9.png" alt="Image 9">
+      <img src="images/img10.png" alt="Image 10">
+    </div>
+  </section>
+
   <script src="script.js"></script>
+
+  <script>
+    // Gallery JavaScript
+    const mainDisplay = document.getElementById("mainDisplay");
+    const thumbnails = document.querySelectorAll(".gallery img");
+
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener("click", function () {
+        mainDisplay.src = this.src; // Use the clicked thumbnail's image
+        mainDisplay.alt = this.alt; // Update alt text
+      });
+    });
+  </script>
 </body>
 </html>
