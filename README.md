@@ -46,5 +46,7 @@ script.js # Gallery JS functionality
 
 1. Clone the repository:
    git clone https://github.com/kazuk1-kun/EXP4-GALLERY.git
-2.Open index.html in your browser
+
+2. Open index.html in your browser
+
 3. Go to Photography to explore the gallery
